@@ -1,11 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Mirage Resort</title>
+    <title>Login do Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 380px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 15px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1f618d;
+        }
+
+        p {
+            margin-top: 25px;
+            color: #555555;
+            font-size: 14px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #1f618d;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color: blue;">HOTEL</h1>
+
+    <h1>HotelSystem</h1>
+    <h2>Acesso do Cliente</h2>
+
+    <form action="autenticar.php" method="POST">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@gmail.com">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="digite sua senha">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p>Ainda não é cadastrado? <a href="cadastro_cliente.html">Cadastre-se aqui</a></p>
+
 </body>
 </html>

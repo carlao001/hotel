@@ -4,116 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login do Cliente</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-            font-size: 28px;
-        }
-
-        h2 {
-            color: #34495e;
-            margin-top: 0;
-            margin-bottom: 30px;
-            font-size: 20px;
-            font-weight: normal;
-        }
-
+        /* LARGURA DO FORMULÁRIO */
         form {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 380px;
+            width: 300px;
+            margin: 0 auto;
         }
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #2c3e50;
-            font-weight: bold;
+        /* ALINHAMENTO DAS CAIXAS DE ENTRADA */
+        .input-group{
+            margin-bottom: 15px;
         }
 
         input {
             width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #bdc3c7;
-            border-radius: 8px;
-            box-sizing: border-box;
-            font-size: 15px;
-            transition: border-color 0.3s;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
 
-        input:focus {
-            outline: none;
-            border-color: #3498db;
-        }
-
+        /* ESTILO DO BOTÃO - FUNDO AZUL #0056B3 */
         button {
             width: 100%;
-            padding: 14px;
-            background-color: #2980b9;
+            padding: 10px;
+            background-color: #0056b3;
             color: white;
             border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
+            border-radius: 4px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            font-size: 16px;
         }
 
         button:hover {
-            background-color: #1f618d;
-        }
-
-        p {
-            margin-top: 25px;
-            color: #555555;
-            font-size: 14px;
-        }
-
-        a {
-            color: #2980b9;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: #1f618d;
-            text-decoration: underline;
+            background-color: #004494;
         }
     </style>
 </head>
 <body>
 
     <h1>HotelSystem</h1>
-    <h2>Acesso do Cliente</h2>
 
-    <form action="autenticar.php" method="POST">
+    <h2 style="color: #333333; text-align: center;">Acesso do Cliente</h2>
+    
+    <form action="autenticar.php" method="post">
+    <div class="input-group">
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" placeholder="seuemail@gmail.com">
+        <br><br>
 
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" placeholder="digite sua senha">
-
+    </div>
         <button type="submit">Enviar</button>
     </form>
-
     <p>Ainda não é cadastrado? <a href="cadastro_cliente.html">Cadastre-se aqui</a></p>
 
 </body>

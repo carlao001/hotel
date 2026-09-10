@@ -10,9 +10,9 @@ $resultado = mysqli_query($conexao, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
     header("Location: minhas_reservas.php");
-    exit;
+    exit();
 }else{
     header("Location: login.html");
-    exit;
+    exit();
 }
 ?>

@@ -12,12 +12,14 @@
             margin: 8px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 300px;
+            width: 100%;
+            height: 42px;
+            font-size: 17px;
         }
         form{
-            width: 320px;
+            width: 450px;
             margin: 30px auto;
-            padding: 20px;
+            padding: 30px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -35,12 +37,18 @@
         button:hover{
             background-color: #1b845a;
         }
+        .link-voltar{
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
     <h1 style="text-align: center; color: #2c3e50;">IMPERIAL PALACE</h1>
-    <h2>Cadastro de Hotel</h2>
+    <br>
+    <h2 style="text-align: center;">Cadastro de Hotel</h2>
 
     <form action="salvar_hotel.php" method="post">
 
@@ -53,10 +61,10 @@
         <label for="classificacao">Classificação em Estrelas (1 a 5):</label>
         <input type="number" id="estrelas" name="estrelas" min="1" max="5">
 
-        <button type="submit">Enviar Cadastro</button>
+        <button type="submit">ENVIAR CADASTRO</button>
     </form>
 
-    <a href="index.html">Voltar à página principal</a>
+    <a href="index.html" class="link-voltar">Voltar à página principal</a>
 
 </body>
 </html>

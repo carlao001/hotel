@@ -41,12 +41,17 @@
         button:hover {
             background-color: #004494;
         }
+        .cadastrar{
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <h1>HotelSystem</h1>
-
+    <h1 style="text-align: center;">HotelSystem</h1>
+    <br>
     <h2 style="color: #333333; text-align: center;">Acesso do Cliente</h2>
     
     <form action="autenticar.php" method="post">
@@ -60,7 +65,8 @@
     </div>
         <button type="submit">Enviar</button>
     </form>
-    <p>Ainda não é cadastrado? <a href="cadastro_cliente.html">Cadastre-se aqui</a></p>
+    <br>
+    <p style="text-align: center;">Ainda não é cadastrado? <a href="cadastro_cliente.html" class="cadastrar">Cadastre-se aqui</a></p>
 
 </body>
 </html>

@@ -23,6 +23,9 @@
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .input-estrelas{
+            width: 120px;
+        }
         button{
             background-color: #4CAF50;
             color: white;
@@ -59,8 +62,9 @@
         <input type="text" id="cidade" name="cidade" required>
 
         <label for="estrelas">Classificação em Estrelas (1 a 5):</label>
-        <input type="number" id="estrelas" name="estrelas" min="1" max="5">
-
+        <input type="number" id="estrelas" name="estrelas" min="1" max="5" class="input-estrelas">
+        <br>
+        
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso do Hotel / Parceiro</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+</head>
+<body>
+    <div class="container-login">
+        <h1>HOTEL PALACE</h1>
+        <h2>Acesso do Hotel / Parceiro</h2>
+
+        <form action="autenticar_hotel.php" method="post">
+            
+            <div class="grupo-campo">
+                <label for="email_hotel">E-mail do Hotel:</label>
+                <input type="email" id="email_hotel" name="email_hotel" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="senha_hotel">Senha:</label>
+                <input type="password" id="senha_hotel" name="senha_hotel" required>
+            </div>
+
+            <button type="submit" class="botao-login">Acessar Painel do Hotel</button>
+        </form>
+
+        <p class="link-cadastro">
+            Ainda não é parceiro? <a href="cadastro_hotel.html">Cadastre-se aqui</a>
+        </p>
+    </div>
+</body>
+</html>

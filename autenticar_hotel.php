@@ -9,10 +9,10 @@ $sql = "SELECT * FROM hoteis WHERE email = '$email' AND senha = '$senha'";
 $resultado = mysqli_query($conexao, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
-    header("Location: painel_hotel.php");
+    header("Location: cadastrar_quarto.php");
     exit();
 }else{
-    header("Location: login_hotel.html");
-    exit();
+    echo "Seu e-mail e senha não existem";
+    echo "<a href="login_hotel.html">Clique aqui para tentar novamente</a>";
 }
 ?>

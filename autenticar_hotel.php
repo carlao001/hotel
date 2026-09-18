@@ -13,6 +13,6 @@ if (mysqli_num_rows($resultado) > 0) {
     exit();
 }else{
     echo "Seu e-mail e senha não existem";
-    echo "<a href="login_hotel.html">Clique aqui para tentar novamente</a>";
+    echo "<a href='login_hotel.html'>Clique aqui para tentar novamente</a>";
 }
 ?>

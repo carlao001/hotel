@@ -6,14 +6,13 @@ $numero_quarto = $_POST['numero_quarto'];
 $tipo_quarto = $_POST['tipo_quarto'];
 $preco_diaria = $_POST['preco_diaria'];
 
-$sql = "INSERT INTO quartos (hotel_id, numero, tipo, preco_diaria)
-VALUES ('$id_hotel', '$numero_quarto', '$tipo_quarto', '$preco_diaria')";
+$sql = "INSERT INTO quartos (hotel_id, numero, tipo, preco_diaria, disponivel)
+VALUES ('$id_hotel', '$numero_quarto', '$tipo_quarto', '$preco_diaria', 1)";
 
-$resultado = mysqli_query($conexao, $sql);
-
-if(!$resultado) {
-    echo "Erro ao cadastrar: " . mysqli_error($conexao);
-    exit;
+if(mysqli_query($conexao, $sql)) {
+    
+} else {
+    
 }
 ?>
 

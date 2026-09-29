@@ -103,8 +103,8 @@ $resultado = mysqli_query($conexao, $sql);
     </table>
 
     <div class="links">
-        <a href="cadastrar_quarto.php">Cadastrar Novo Quarto</a>
-        <a href="sair.php">Sair</a>
+        <a href="cadastrar_quarto.html">Cadastrar Novo Quarto</a>
+        <a href="logout_hotel.php">Sair</a>
     </div>
 
 </body>

@@ -14,8 +14,8 @@ $sql = "INSERT INTO hoteis (nome, cidade, estrelas, email, senha)
 VALUES ('$nome', '$cidade', '$estrelas', '$email', '$senha_hash')";
 
 if(mysqli_query($conexao, $sql)){
-
+    echo "<br>Cadastro realizado com sucesso!";
 }else {
-    
+    echo "<br>ERROR";
 }
 ?>
